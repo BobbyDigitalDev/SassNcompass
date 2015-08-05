@@ -1,1 +1,32 @@
- 
+// speakers ---------------------------------------------------------------------- 
+.speakers {
+  .artist{
+    @include clearfix;//allows the h3 tags to fit properly along the floated images
+    h3 {//targets only the h3's within the artists/speakers chain
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px dotted $lightgray;
+      margin-bottom: 5px;
+    }//h3
+    img {//targets those images in same chain
+      @include border-radius;
+      width: 120px;
+      float: left;
+      margin: {
+        right: 10px;
+        bottom: 10px;
+      }//margin
+    }//image
+  }//artist
+}//speakers
+
+// next meeting  ---------------------------------------------------------------------- 
+#nextmeeting {
+  @include clearfix;
+  img {
+    width: 30%;
+    max-width: 130px;
+    float: left;
+    margin-right: 3%;
+  }
+}
