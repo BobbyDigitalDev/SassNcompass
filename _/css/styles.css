@@ -139,3 +139,33 @@ p {
     max-width: 130px;
     float: left;
     margin-right: 3%; }
+
+/* line 37, ../components/sass/_modules.scss */
+.socialmediaicons .title {
+  float: left; }
+/* line 40, ../components/sass/_modules.scss */
+.socialmediaicons ul {
+  float: left; }
+  /* line 42, ../components/sass/_modules.scss */
+  .socialmediaicons ul li {
+    display: inline-block;
+    margin-left: 5px; }
+    /* line 45, ../components/sass/_modules.scss */
+    .socialmediaicons ul li img {
+      width: 30px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+
+/* line 55, ../components/sass/_modules.scss */
+.pixgrid {
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 58, ../components/sass/_modules.scss */
+  .pixgrid img {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 120px;
+    cursor: pointer; }
