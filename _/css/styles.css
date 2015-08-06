@@ -109,6 +109,85 @@ p {
   font-size: 1rem;
   color: #2176C7; }
 
+/* line 14, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susyone/_grid.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 18, ../components/sass/_layout.scss */
+.layout {
+  *zoom: 1;
+  max-width: 61em;
+  _width: 61em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%; }
+  /* line 38, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .layout:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 22, ../components/sass/_layout.scss */
+  .layout .primary {
+    margin-top: .2em; }
+    @media (min-width: 47em) {
+      /* line 22, ../components/sass/_layout.scss */
+      .layout .primary {
+        width: 66.10169%;
+        float: left;
+        margin-right: 1.69492%; }
+        /* line 27, ../components/sass/_layout.scss */
+        .layout .primary #nextmeeting {
+          -moz-border-radius: 20px;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+          color: #FCF4DC;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          padding: 0 20px 20px 20px;
+          background: #259286; }
+          /* line 35, ../components/sass/_layout.scss */
+          .layout .primary #nextmeeting h1 {
+            color: #16554e;
+            border: none;
+            text-shadow: none;
+            margin-bottom: 20px; }
+          /* line 42, ../components/sass/_layout.scss */
+          .layout .primary #nextmeeting a {
+            color: #0A2933; } }
+
+/* line 58, ../components/sass/_layout.scss */
+header img {
+  width: 95%;
+  margin: 2.5%;
+  max-width: 500px;
+  margin-bottom: 0; }
+
+/* line 68, ../components/sass/_layout.scss */
+.navigation {
+  background-color: #175c73; }
+  /* line 72, ../components/sass/_layout.scss */
+  .navigation ul.nav li i {
+    color: #f7b71a;
+    padding-right: .5em; }
+  /* line 76, ../components/sass/_layout.scss */
+  .navigation ul.nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #FCF4DC; }
+
+/* line 88, ../components/sass/_layout.scss */
+footer {
+  color: #EAE3CB;
+  background: #0d3340;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px; }
+
 /* line 3, ../components/sass/_modules.scss */
 .speakers .artist {
   overflow: hidden;

@@ -1,0 +1,97 @@
+//Susy Setup --------------Susy proviles a way to make layout changes without having to mess with your html---------------
+
+$total-columns      : 12; //12 column grid
+$column-width       : 4em;
+$gutter-width       : 1em;
+$grid-padding       : $gutter-width;
+
+@include border-box-sizing;//allows us to keep the boxes at their set size and not grow due to padding
+
+//media query break-points
+$small              : 30em;
+$medium             : 47em;
+$large              : 75em;
+
+
+
+//Content ---------------------------------------------------------------
+.layout{
+  @include container;
+  padding: 3%;
+
+  .primary {
+    margin-top: .2em;
+    @include at-breakpoint($medium) {//all the code contained within happens at the medium breakpoint
+      @include span-columns(8,12);//sets the primary class to have an 8 out of 12 column width
+
+      #nextmeeting {
+        @include border-radius(20px);
+        color: $paleryellow;//color of text
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0 20px 20px 20px;
+        background: $cyan;
+
+        h1 {
+          color: darken($cyan, 15);
+          border: none;
+          text-shadow: none;
+          margin-bottom: 20px;
+        }
+
+        a {
+          color: $darkblue;
+        }//a
+
+      }//next meeting
+
+    }//Medium layout
+  }//Primary
+
+}//Content layout
+
+
+
+//Header ---------------------------------------------------------------
+
+header {
+  img {
+    width: 95%;
+    margin:2.5%;
+    max-width: 500px;
+    margin-bottom: 0;
+  }
+}
+
+//navigation ---------------------------------------------------------------
+
+.navigation {
+  background-color: lighten($darkblue, 15);
+  ul.nav {
+    li {
+      i {
+        color: lighten($yellow, 20);
+        padding-right: .5em;
+      }//icons
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: $paleryellow;
+      }//a
+    }//li
+  }//ul.nav
+}//navigation
+
+//footer ---------------------------------------------------------------
+
+footer {
+  color: $paleyellow;
+  background: lighten($darkblue, 3);
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+
+

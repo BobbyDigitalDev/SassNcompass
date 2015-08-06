@@ -1,7 +1,7 @@
 @import "compass";
-@import "compass/reset";
+@import "compass/reset";//browserReset
 @import "susyone"; 
-
+//import your partials
 @import "variables";
 @import "mixins";
 @import "base";
