@@ -124,7 +124,7 @@ p {
   padding-right: 1em;
   margin-left: auto;
   margin-right: auto;
-  padding: 3%; }
+  padding: 0 3%; }
   /* line 38, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .layout:after {
     content: "";
@@ -242,18 +242,22 @@ header .hero {
     padding-right: .5em; }
   /* line 116, ../components/sass/_layout.scss */
   .navigation ul.nav li a {
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     display: block;
     text-decoration: none;
     padding: 5px 10px;
     color: #FCF4DC; }
-    /* line 122, ../components/sass/_layout.scss */
+    /* line 123, ../components/sass/_layout.scss */
     .navigation ul.nav li a:hover {
       background: #BD3613; }
-      /* line 124, ../components/sass/_layout.scss */
+      /* line 125, ../components/sass/_layout.scss */
       .navigation ul.nav li a:hover a {
         color: #f8c64c; }
 
-/* line 135, ../components/sass/_layout.scss */
+/* line 136, ../components/sass/_layout.scss */
 footer {
   color: #EAE3CB;
   background: #0d3340;

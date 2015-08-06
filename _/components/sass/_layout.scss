@@ -18,7 +18,7 @@ $large              : 75em;
 //Content ---------------------------------------------------------------
 .layout{
   @include container;
-  padding: 3%;
+  padding: 0 3%;
 
   .primary {
     margin-top: .2em;
@@ -114,6 +114,7 @@ header {
         padding-right: .5em;
       }//icons
       a {
+        @include single-transition(all, .5s, ease-out); //adds a nice 1second transition between breakpoints so that it's not so jarring
         display: block;
         text-decoration: none;
         padding: 5px 10px;
