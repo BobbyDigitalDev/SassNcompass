@@ -144,6 +144,10 @@ header {
     }//margin
   }//image
 
+  i {
+    padding-right: 15px;
+  }
+
   @include at-breakpoint($medium) {
     text-align: center;
     @include background(linear-gradient(top, lighten($darkblue, 3), $darkerblue));
@@ -190,6 +194,34 @@ header {
       max-width: 170px;
       margin: 0 auto;
       @include border-radius(50%);
+    }
+
+    .small {
+      display: block;//pushes the .small sections to their own lines. prep for the columns
+    }
+
+    p:nth-of-type(2){//targets the second paragraph in this particular section
+      font-weight: 200 !important;
+      text-align: left;
+      font-size: .8em;
+      line-height: 0; //forces all the type to overlap onto one line
+      @include single-transition(all, .3s, ease-out);
+      opacity: 0;//make the type disapear
+    }
+
+    &:hover {
+      p:nth-of-type(2) {
+        line-height: 1.5em;
+        opacity: 1;
+      }
+    }
+
+    .artist {
+      @include span-columns(4, 12);
+    }
+
+    .artist:nth-of-type(3) {//grabs the 3 column
+      @include span-columns(4 omega, 12);//and applies the omega to it so that it floats right
     }
 
   }//breakpoint medium

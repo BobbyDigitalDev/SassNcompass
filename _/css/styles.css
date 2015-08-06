@@ -313,6 +313,10 @@ header .hero {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+/* line 147, ../components/sass/_layout.scss */
+.speakerslist i {
+  padding-right: 15px;
+}
 @media (min-width: 47em) {
   /* line 135, ../components/sass/_layout.scss */
   .speakerslist {
@@ -326,12 +330,12 @@ header .hero {
     overflow: hidden;
     padding-bottom: 10px;
   }
-  /* line 154, ../components/sass/_layout.scss */
+  /* line 158, ../components/sass/_layout.scss */
   .speakerslist h1, .speakerslist h2, .speakerslist h3, .speakerslist h4, .speakerslist h5, .speakerslist h6 {
     text-shadow: none;
     border-bottom: none !important;
   }
-  /* line 159, ../components/sass/_layout.scss */
+  /* line 163, ../components/sass/_layout.scss */
   .speakerslist h1 {
     color: #738A05;
     font-size: 2.6rem;
@@ -339,34 +343,34 @@ header .hero {
   }
 }
 @media (min-width: 47em) and (min-width: 75em) {
-  /* line 159, ../components/sass/_layout.scss */
+  /* line 163, ../components/sass/_layout.scss */
   .speakerslist h1 {
     font-size: 4rem;
     line-height: 1em;
   }
 }
 @media (min-width: 47em) {
-  /* line 169, ../components/sass/_layout.scss */
+  /* line 173, ../components/sass/_layout.scss */
   .speakerslist h3 {
     color: #d69a08;
     line-height: .9rem;
   }
-  /* line 174, ../components/sass/_layout.scss */
+  /* line 178, ../components/sass/_layout.scss */
   .speakerslist .small {
     padding-top: .4em !important;
     line-height: 1em;
     color: #2390b3;
   }
-  /* line 178, ../components/sass/_layout.scss */
+  /* line 182, ../components/sass/_layout.scss */
   .speakerslist .small a {
     color: #2390b3;
     text-decoration: none;
   }
-  /* line 181, ../components/sass/_layout.scss */
+  /* line 185, ../components/sass/_layout.scss */
   .speakerslist .small a:hover {
     text-decoration: underline;
   }
-  /* line 187, ../components/sass/_layout.scss */
+  /* line 191, ../components/sass/_layout.scss */
   .speakerslist img.speaker {
     float: none;
     width: 40%;
@@ -376,9 +380,42 @@ header .hero {
     -webkit-border-radius: 50%;
     border-radius: 50%;
   }
+  /* line 199, ../components/sass/_layout.scss */
+  .speakerslist .small {
+    display: block;
+  }
+  /* line 203, ../components/sass/_layout.scss */
+  .speakerslist p:nth-of-type(2) {
+    font-weight: 200 !important;
+    text-align: left;
+    font-size: .8em;
+    line-height: 0;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+  }
+  /* line 213, ../components/sass/_layout.scss */
+  .speakerslist:hover p:nth-of-type(2) {
+    line-height: 1.5em;
+    opacity: 1;
+  }
+  /* line 219, ../components/sass/_layout.scss */
+  .speakerslist .artist {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 223, ../components/sass/_layout.scss */
+  .speakerslist .artist:nth-of-type(3) {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
 }
 
-/* line 202, ../components/sass/_layout.scss */
+/* line 234, ../components/sass/_layout.scss */
 footer {
   color: #EAE3CB;
   background: #0d3340;
