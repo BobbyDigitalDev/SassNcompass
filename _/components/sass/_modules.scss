@@ -8,15 +8,6 @@
       border-bottom: 1px dotted $lightgray;
       margin-bottom: 5px;
     }//h3
-    img {//targets those images in same chain
-      @include border-radius;
-      width: 120px;
-      float: left;
-      margin: {
-        right: 10px;
-        bottom: 10px;
-      }//margin
-    }//image
   }//artist
 }//speakers
 
