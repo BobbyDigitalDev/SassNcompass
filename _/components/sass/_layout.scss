@@ -17,7 +17,7 @@ $large              : 75em;
 
 //Content ---------------------------------------------------------------
 .layout{
-  @include container;
+  @include container;//The container mixin establishes the width of your page
   padding: 0 3%;
 
   .primary {
@@ -114,7 +114,7 @@ header {
         padding-right: .5em;
       }//icons
       a {
-        @include single-transition(all, .5s, ease-out); //adds a nice 1second transition between breakpoints so that it's not so jarring
+        @include single-transition(all, .5s, ease-out); //adds a nice 1second transition 
         display: block;
         text-decoration: none;
         padding: 5px 10px;
@@ -130,6 +130,17 @@ header {
     }//li
   }//ul.nav
 }//navigation
+
+//speaker list ---------------------------------------------------------------
+.speakerslist {
+  @include at-breakpoint($medium) {
+    text-align: center;
+    @include background(linear-gradient(top, lighten($darkblue, 3), $darkerblue));
+
+  }//breakpoint
+}//speakers list
+
+
 
 //footer ---------------------------------------------------------------
 
