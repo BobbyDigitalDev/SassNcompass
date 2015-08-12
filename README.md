@@ -178,16 +178,24 @@ You can include the breakpoints in your layout by calling an @include at-breakpo
 @include at-breakpoint($medium) {//all the code contained within happens at the medium breakpoint
 
 ```
-You can also set the column range a particular div element should occupy by using the span column mixin:
+You can also set the column range a particular div element should occupy by using the span column mixin. It sets the containing class to have an 8 out of 12 column width.
 ```
-@include span-columns(8,12);/sets the containing class to have an 8 out of 12 column width
+@include span-columns(8,12);
 ```
+_Omega_ tells sass that this is the last 4 of 12 columns and should be floated to the right. Omega is helpful for changing your layout around on the fly.
 ```
-@include span-columns(4 omega, 12);//omega tells sass that this is the last 4 of 12 columns and should be floated to the right
+@include span-columns(4 omega, 12);
 ```
 
 
-####Grunt Task manager workflow
+### What is Grunt?
+Grunt is a task manager that can do a number of repetitive tasks for you. Gulp is the latest competitor to Grunt. They do similar things in slightly different ways.
+What I used Grunt for in this project:
+1. JS minification via the Uglify plugin
+2. Compiling of SCSS Sass files to CSS via the Compass plugin
+3. Live browser reload and realtime triggering of the tasks on file save via the watch plugin and default tasks
+
+
 ###Helpful links
 ***
 #####Sass Docs
@@ -201,3 +209,7 @@ http://compass-style.org/index/mixins/
 #####Susy Docs
 
 http://susy.oddbird.net/
+
+##### Grunt Docs
+
+http://gruntjs.com/getting-started
