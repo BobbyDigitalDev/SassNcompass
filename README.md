@@ -9,13 +9,17 @@
  5. Mixins - similar to JS functions
 
 ####Variables
-```$main_color : #023E54;
+```
+$main_color : #023E54;
+
     .navbar {
       background: $main_color;
     }
+    
     h1, h2, h3 {
       background: $main_color;
-    }```
+    }
+```
 
 
 
