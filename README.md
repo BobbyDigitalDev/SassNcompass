@@ -15,8 +15,8 @@
     }
     h1, h2, h3 {
       background: $main_color;
-    }
-```
+    }```
+
 
 
 
