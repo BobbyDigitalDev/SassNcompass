@@ -142,7 +142,7 @@ ul li img {
   background-clip: padding-box;
 }
 ```
- ###What is Compass?
+###What is Compass?
  Compass is a group of preset mixins that run on top of SASS. There are mixins that handle css support for gradients, shadows and rounded edges among others. It speeds up your workflow. It saves time by allowing you to include multiple declarations you use most often in combinations and keeps you from having to write out vendor prefixes for certain declarations over and over again.
 
  Handy Compass Mixins
