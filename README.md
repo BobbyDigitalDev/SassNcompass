@@ -10,7 +10,7 @@ This is a quick tut I did on SASS with Compass and Susy Mixins under the Grunt.j
  5. Mixins - similar to JS functions
 
 ####Variables
-We can assign a variable name to different things like colors and reuse them later. If you change your color scheme, you only have to change the color declaration in one place. 
+We can assign a variable name to different things like colors and reuse them later. If you change your color scheme, you only have to change the color declaration in one place.
 ```
 $main_color : #023E54;
 
@@ -45,7 +45,7 @@ Nesting in sass helps keep things organized by grouping similar declarations
 }
 ```
 
-#### After being compliled
+#### After being compiled
 ```
 .pixgrid ul {
   margin: 0;
