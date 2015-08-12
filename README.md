@@ -191,9 +191,9 @@ _Omega_ tells sass that this is the last 4 of 12 columns and should be floated t
 ### What is Grunt?
 Grunt is a task manager that can do a number of repetitive tasks for you. Gulp is the latest competitor to Grunt. They do similar things in slightly different ways.
 What I used Grunt for in this project:
-1. JS minification via the Uglify plugin
-2. Compiling of SCSS Sass files to CSS via the Compass plugin
-3. Live browser reload and realtime triggering of the tasks on file save via the watch plugin and default tasks
+  1. JS minification via the Uglify plugin
+  2. Compiling of SCSS Sass files to CSS via the Compass plugin
+  3. Live browser reload and realtime triggering of the tasks on file save via the watch plugin and default tasks
 
 
 ###Helpful links
