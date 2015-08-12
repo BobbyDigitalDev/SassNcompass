@@ -152,17 +152,20 @@ ul li img {
 @include text-shadow($paleryellow 1px 1px);
 @include background(linear-gradient(to bottom, red, blue));
 ```
+####Susy for mobile first responsive mixins
 
 
-
-
-
-
-####Susy for mobile first resposive mixins
 ####Grunt Task manager workflow
 ###Helpful links
 ***
-Sass Docs
+#####Sass Docs
+
 http://www.sass-lang.com/
 
-Compass Mixins http://compass-style.org/index/mixins/
+#####Compass Mixins
+
+http://compass-style.org/index/mixins/
+
+#####Susy Docs
+
+http://susy.oddbird.net/
