@@ -152,7 +152,39 @@ ul li img {
 @include text-shadow($paleryellow 1px 1px);
 @include background(linear-gradient(to bottom, red, blue));
 ```
-####Susy for mobile first responsive mixins
+### What is Susy?
+Mobile first responsive mixins you can use on top of SASS to control how your site responds to different viewport sizes.
+
+Typical set up:
+```
+//Susy Setup ------------------------------------------------------------
+//Susy proviles a way to make layout changes without having to mess with your html
+
+$total-columns      : 12; //12 column grid
+$column-width       : 4em;
+$gutter-width       : 1em;
+$grid-padding       : $gutter-width;
+
+@include border-box-sizing;//allows us to keep the boxes at their set size and not grow due to padding
+
+//media query break-points
+$small              : 30em;
+$medium             : 47em;
+$large              : 75em;
+```
+
+You can include the breakpoints in your layout by calling an @include at-breakpoint() like this:
+```
+@include at-breakpoint($medium) {//all the code contained within happens at the medium breakpoint
+
+```
+You can also set the column range a particular div element should occupy by using the span column mixin:
+```
+@include span-columns(8,12);/sets the containing class to have an 8 out of 12 column width
+```
+```
+@include span-columns(4 omega, 12);//omega tells sass that this is the last 4 of 12 columns and should be floated to the right
+```
 
 
 ####Grunt Task manager workflow
