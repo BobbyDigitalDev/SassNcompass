@@ -1,12 +1,15 @@
 #Sass with Compass and Susy
 This is a quick tut I did on SASS with Compass and Susy Mixins under the Grunt.js workflow.
 ###What is SASS?
-+ Syntactically Awesome Style Sheets
-+ Allows for additional functionality not yet supported by CSS or browsers
+Syntactically Awesome Style Sheets.
+
+Two 2 flavors: .SASS and .SCSS. .SCSS is newer and is written closer to regular css. You can even write regular css in it.
+
+Sass allows for additional functionality not yet supported by CSS or browsers
  1. Variables like JS
- 2. Nesting - to group related rules
+ 2. Nesting - to group related declarations
  3. Operators - math in CSS
- 4. Control Structures
+ 4. Control Structures - if, else statements
  5. Mixins - similar to JS functions
 
 ####Variables
@@ -139,7 +142,16 @@ ul li img {
   background-clip: padding-box;
 }
 ```
+ ###What is Compass?
+ Compass is a group of preset mixins that run on top of SASS. There are mixins that handle css support for gradients, shadows and rounded edges among others. It speeds up your workflow. It saves time by allowing you to include multiple declarations you use most often in combinations and keeps you from having to write out vendor prefixes for certain declarations over and over again.
 
+ Handy Compass Mixins
+```
+@include clearfix;
+@include border-radius(50%);
+@include text-shadow($paleryellow 1px 1px);
+@include background(linear-gradient(to bottom, red, blue));
+```
 
 
 
@@ -150,4 +162,7 @@ ul li img {
 ####Grunt Task manager workflow
 ###Helpful links
 ***
+Sass Docs
 http://www.sass-lang.com/
+
+Compass Mixins http://compass-style.org/index/mixins/
